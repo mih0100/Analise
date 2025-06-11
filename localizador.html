@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Localizador</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
+</head>
+
+<body>
+        <script>
+            var nome = ["Kamily","Celina","Gustavo"];
+            var turma = ["1 Ano","2 Ano","3 Ano"];
+            var tri1 = [70, 50, 70];
+            var tri2 = [80, 50, 60];
+            var tri3 = [80, 50, 70];
+
+            function seleciona(LocalizaLista){
+                nomeComparado = document.LocalizaLista.NOME.value;
+                turmaComparado = document.LocalizaLista.TURMA.value;
+                let i = 0;
+                document.write("<table border=1>");
+                    for(i = 0; i <nome.length; i++){
+
+                        if(nome[i] .indexOf(nomeComparado) !== -1 ||
+                        turma[i].indexOf(turmaComparado) !== -1
+
+                        ){
+                            document.write("<tr>");
+                                document.write("<td>");
+                                    document.write("Nome: " + nome[i]);
+                                document.write("</td>");
+                          
+
+
+                                document.write("<td>");
+                                    document.write("Turma: " + turma[i]);
+                                document.write("</td>");
+                            document.write("</tr>");
+
+
+
+                        }
+
+
+                    }
+                document.write("</table>");
+
+
+            }
+
+
+
+        </script>
+
+
+
+
+
+    <form NAME="LocalizaLista">
+         <table>
+
+            <tr bgcolor=Carmesim>
+            
+                <td width=40 align="center">Nome</td>
+                <td width=40 align="center"><input NAME="NOME" VALUE=""></td>
+
+                <td width=40 align="center">Turma</td>
+                <td width=40 align="center"><input NAME="TURMA" VALUE=""></td>
+
+            </tr>
+            <tr> 
+            <td width=80 align="center" colspan="4" bgcolor="Carmesim">
+                <input type="button" NAME="botao" VALUE="Localizar" onclick="seleciona(LocalizaLista)">
+            </td>    
+            </tr><!DOCTYPE html>
+            <html>
+            <head>
+                <meta charset='utf-8'>
+                <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+                <title>Localizador</title>
+                <meta name='viewport' content='width=device-width, initial-scale=1'>
+                <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+                <script src='main.js'></script>
+
+         </table>
+        </form>
+</body>
+
+</html>
+
